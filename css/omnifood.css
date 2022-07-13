@@ -17,6 +17,7 @@
 
 body {
   font-family: "Rubik", sans-serif;
+  color: #555;
 }
 .header {
   display: flex;
@@ -409,4 +410,238 @@ body {
 .all-recipes > a:hover {
   color: #cf711f;
   border-bottom: 1px solid transparent;
+}
+
+.testimonials {
+  background-color: var(--primary-background);
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+}
+
+.testimoials-left {
+  padding: 96px;
+}
+
+.testimoials-title {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #cf711f;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: 0.75px;
+}
+
+.testimoials-description {
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 96px;
+}
+
+.testimoials-users {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 48px;
+  column-gap: 80px;
+}
+
+.testimoials-user > img {
+  width: 64px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+}
+
+.testimoials-user > blockquote {
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 16px;
+  color: var(--text-color-p);
+}
+
+.testimoials-user > p {
+  font-size: 16px;
+  color: #6f6f6f;
+}
+
+.testimoials-right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  padding: 16px;
+}
+
+.testimoials-right .gallery-item {
+  overflow: hidden;
+}
+
+.testimoials-right .gallery-item > img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+
+.testimoials-right .gallery-item > img:hover {
+  transform: scale(1.2);
+}
+
+.pricing {
+  padding: 96px 32px 96px 32px;
+}
+
+.pricing .pricing-title {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--hover-color);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  letter-spacing: 0.75px;
+}
+
+.pricing .pricing-description {
+  font-size: 44px;
+  line-height: 1.2;
+  margin-bottom: 96px;
+}
+
+.pricing .pricing-plan {
+  border-radius: 11px;
+  width: 75%;
+}
+
+.plan-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.pricing-plan--starter {
+  justify-self: end;
+  border: 2px solid #fdf2e9;
+  padding: 46px;
+}
+
+.plan-header--name {
+  color: var(--hover-color);
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.plan-header--price {
+  font-size: 62px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 16px;
+}
+
+.plan-header--price > span {
+  font-size: 30px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+.plan-header--text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+.pricing-plan .list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.pricing-plan .list .item {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  line-height: 1.2;
+}
+
+.pricing-plan .list .item .icon {
+  width: 30px;
+  height: 20px;
+  color: var(--hover-color);
+}
+
+.pricing-plan--complete {
+  background-color: var(--primary-background);
+  padding: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.pricing-plan--complete::before {
+  position: absolute;
+  content: "Best Value";
+  text-transform: uppercase;
+  color: var(--text-color);
+  background-color: #ffd43b;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 8px 80px;
+  top: 6%;
+  right: -70px;
+  transform: rotate(45deg);
+}
+
+.btn-start-eating-well {
+  text-align: center;
+  margin-top: 48px;
+}
+
+.btn-start-eating-well > a:link,
+.btn-start-eating-well > a:visited {
+  background-color: var(--background-btn-color);
+  color: #fff;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 32px;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.btn-start-eating-well > a:hover {
+  background-color: var(--hover-color);
+}
+
+.plan-detail {
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+.pricing .feature .icon {
+  color: var(--hover-color);
+  height: 60px;
+  width: 60px;
+  background-color: var(--primary-background);
+  margin-bottom: 32px;
+  padding: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.pricing .feature > .title {
+  font-size: 24px;
+  color: var(--text-color);
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.pricing .feature > .text {
+  font-size: 18px;
+  line-height: 1.8;
 }
