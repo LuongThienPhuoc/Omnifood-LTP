@@ -28,3 +28,7 @@
 .mb-12 {
   margin-bottom: 48px;
 }
+
+.grid--footer {
+  grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}

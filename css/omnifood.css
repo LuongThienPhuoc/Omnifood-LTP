@@ -645,3 +645,178 @@ body {
   font-size: 18px;
   line-height: 1.8;
 }
+
+.sign-up-service {
+  padding: 0 32px 96px 32px;
+}
+
+.sign-up-service--body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgb(0 0 0 / 15%);
+  border-radius: 11px;
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  overflow: hidden;
+}
+
+.column-left {
+  padding: 48px 64px 64px 64px;
+  color: #45260a;
+}
+
+.column-left-title {
+  color: inherit;
+  margin-bottom: 32px;
+  font-size: 44px;
+  line-height: 1.2;
+}
+
+.column-left-text {
+  color: #45260a;
+  font-size: 18px;
+  line-height: 1.8;
+  margin-bottom: 48px;
+}
+
+.column-left-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 32px;
+  row-gap: 24px;
+}
+
+.column-left-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+}
+
+.column-left-form input,
+select {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: var(--primary-background);
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgb(0 0 0 / 10%);
+}
+
+.column-left-form input:focus,
+.column-left-form select:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgb(253 242 233 / 50%);
+}
+
+.column-left-btn {
+  background-color: #45260a;
+  color: var(--primary-background);
+  align-self: end;
+  padding: 12px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  transition: all 0.3s;
+}
+
+.column-right.img {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url(/content/img/eating.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.footer {
+  padding: 96px 32px;
+  border-top: 1px solid #eee;
+}
+
+.logo-col > a {
+  display: block;
+  margin-bottom: 32px;
+}
+
+.logo-col > a > img {
+  height: 22px;
+}
+
+.socials-list {
+  list-style: none;
+  display: flex;
+  gap: 24px;
+}
+
+.socials-list a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.socials-list a:hover {
+  color: var(--text-color);
+}
+
+.copy-right {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: 60px;
+}
+
+.footer-heading {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.contact {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.contact > .address {
+  margin-bottom: 24px;
+}
+
+.contact a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.contact a:hover {
+  color: #555;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-nav a:hover {
+  color: #555;
+}
