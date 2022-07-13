@@ -9,6 +9,8 @@
     />
     <link rel="stylesheet" href="css/omnifood.css" />
     <link rel="stylesheet" href="css/grid.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="index.js" />
     <title>Omnifood -- Never cook again!</title>
   </head>
   <body>
@@ -19,22 +21,25 @@
       <nav class="header-nav">
         <ul class="nav-list">
           <li class="nav-item active">
-            <a href="#">How it works</a>
+            <a href="#howitwork">How it works</a>
           </li>
           <li class="nav-item">
-            <a href="#">Meals</a>
+            <a href="#meals">Meals</a>
           </li>
           <li class="nav-item">
-            <a href="#">Testimonials</a>
+            <a href="#testimonials">Testimonials</a>
           </li>
           <li class="nav-item">
-            <a href="#">Pricing</a>
+            <a href="#pricing">Pricing</a>
           </li>
           <li class="nav-item btn-item">
-            <a href="#">Try for free</a>
+            <a href="#tryforfree">Try for free</a>
           </li>
         </ul>
       </nav>
+      <div class="btn-menu-tablet">
+        <i class="fas fa-bars"></i>
+      </div>
     </header>
     <main>
       <section class="introduce">
@@ -85,12 +90,14 @@
           </div>
         </div>
       </section>
-      <section class="how-it-work">
+      <section class="how-it-work" id="howitwork">
         <div class="container">
           <p class="title">How it works</p>
           <h2 class="content">Your daily dose of health in 3 simple steps</h2>
         </div>
-        <div class="container grid grid--center grid--2-cols">
+        <div
+          class="container grid grid--center grid--2-cols grid--1-cols-mobile"
+        >
           <!-- STEP 1 -->
           <div class="description-step">
             <p class="step-number">01</p>
@@ -106,7 +113,7 @@
             <img src="content/img/app/app-screen-1.png" alt="Iphone app" />
           </div>
           <!-- STEP 2 -->
-          <div class="box-step">
+          <div class="box-step box-step-mobile">
             <img src="content/img/app/app-screen-2.png" alt="Iphone app" />
           </div>
           <div class="description-step">
@@ -133,14 +140,14 @@
           </div>
         </div>
       </section>
-      <section class="meals">
+      <section class="meals" id="meals">
         <div class="container">
           <div class="title">
             <span>MEALS</span>
             <h2>Omnifood AI chooses from 5,000+ recipes</h2>
           </div>
         </div>
-        <div class="container grid grid--3-cols mb-12">
+        <div class="container grid grid--3-cols mb-12 grid--4-cols-mobile">
           <div class="meal">
             <img src="content/img/meals/meal-1.jpg" alt="Meal 1" />
             <div class="meal-content">
@@ -252,7 +259,7 @@
           <a href="#">See all recipes →</a>
         </div>
       </section>
-      <section class="testimonials">
+      <section class="testimonials" id="testimonials">
         <div class="testimoials-left">
           <span class="testimoials-title">TESTIMONIALS</span>
           <h2 class="testimoials-description">
@@ -332,14 +339,14 @@
           </figure>
         </div>
       </section>
-      <section class="pricing">
+      <section class="pricing" id="pricing">
         <div class="container">
           <p class="pricing-title">Pricing</p>
           <h2 class="pricing-description">
             Eating well without breaking the bank
           </h2>
         </div>
-        <div class="container grid grid--2-cols mb-12">
+        <div class="container grid grid--2-cols mb-12 grid--1-cols-mobile">
           <div class="pricing-plan pricing-plan--starter">
             <header class="plan-header">
               <p class="plan-header--name">Starter</p>
@@ -412,7 +419,7 @@
             Both plans include the following:
           </aside>
         </div>
-        <div class="container grid grid--4-cols">
+        <div class="container grid grid--4-cols grid--2-cols-mobile">
           <div class="feature">
             <i class="fas fa-infinity icon"></i>
             <p class="title">Never cook again!</p>
@@ -447,7 +454,7 @@
           </div>
         </div>
       </section>
-      <section class="sign-up-service">
+      <section class="sign-up-service" id="tryforfree">
         <div class="container">
           <div class="sign-up-service--body">
             <div class="column-left">
@@ -561,4 +568,5 @@
       </div>
     </footer>
   </body>
+  <script src="index.js"></script>
 </html>
