@@ -1,0 +1,26 @@
+.container {
+  max-width: 130rem;
+  padding: 0 32px;
+}
+
+.grid {
+  display: grid;
+  column-gap: 64px;
+  row-gap: 96px;
+}
+
+.grid-center {
+  align-items: center;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.mb-12 {
+  margin-bottom: 48px;
+}
