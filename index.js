@@ -1,10 +1,13 @@
 const elementHeader = document.querySelector(".header");
 const elementIntroduce = document.querySelector(".introduce");
-console.log(elementHeader);
-
-console.log(elementHeader.scrollTop + elementHeader.scrollHeight);
-
+const elementFooter = document.querySelector(".footer");
+console.log(elementFooter.offsetTop);
+console.dir(elementFooter);
 window.addEventListener("scroll", () => {
+  console.log(window.scrollY);
+  if (window.scrollY >= elementFooter.offsetTop - elementFooter.offsetHeight) {
+    elementFooter.classList.add("animation-bottom-to-top");
+  }
   if (
     window.scrollY >=
     elementIntroduce.scrollTop + elementIntroduce.scrollHeight
