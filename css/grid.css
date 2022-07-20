@@ -1,6 +1,7 @@
 .container {
-  max-width: 130rem;
+  max-width: 1200px;
   padding: 0 32px;
+  margin: auto;
 }
 
 .grid {

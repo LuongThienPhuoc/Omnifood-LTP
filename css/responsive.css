@@ -111,6 +111,7 @@
   }
   .container {
     padding: 0;
+    margin: auto;
   }
 
   .how-it-work .content {

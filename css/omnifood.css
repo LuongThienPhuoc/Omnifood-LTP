@@ -109,7 +109,6 @@ body {
 
 .introduce {
   width: 100%;
-  max-width: 120rem;
   background-color: var(--primary-background);
 }
 
@@ -956,4 +955,19 @@ select {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.true {
+  padding: 20px 20px 10px 20px;
+  border: 1px solid black;
+}
+
+.false {
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
 }
